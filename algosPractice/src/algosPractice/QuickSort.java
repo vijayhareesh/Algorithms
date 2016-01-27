@@ -1,5 +1,5 @@
 /**
- * 
+ * Direct implemetation from Cormen
  */
 package algosPractice;
 
@@ -51,7 +51,7 @@ public class QuickSort {
 		// TODO Auto-generated method stub
 		System.out.println("vijay");
 		System.out.println("How r u");
-		int a[] = {12,14,3,6,15,9,8,10};
+		int a[] = {12,14,3,6,12,15,9,8,12,10};
 		quicksort(a,0,a.length-1);
 		printoutput(a);
 	}
