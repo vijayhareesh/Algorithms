@@ -15,7 +15,7 @@ public class QuickSort {
 	 * @param args
 	 */
 	
-	private static void printoutput(int []n){
+	private void printoutput(int []n){
 		for(int i=0; i<n.length; i++){
 			System.out.println(n[i]);
 			//System.out.println("--------------");
@@ -38,7 +38,7 @@ public class QuickSort {
 		return i+1;
 	}
 	
-	private static void quicksort(int []m, int p, int r){
+	private void quicksort(int []m, int p, int r){
 		if(p<r){
 			int q= partition(m,p,r);
 			quicksort(m, p, q-1);
@@ -52,8 +52,9 @@ public class QuickSort {
 		System.out.println("vijay");
 		System.out.println("How r u");
 		int a[] = {12,14,3,6,12,15,9,8,12,10};
-		quicksort(a,0,a.length-1);
-		printoutput(a);
+		QuickSort q = new QuickSort();
+		q.quicksort(a,0,a.length-1);
+		q.printoutput(a);
 	}
 
 }
